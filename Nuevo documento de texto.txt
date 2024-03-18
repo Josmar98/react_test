@@ -1,0 +1,19 @@
+
+npm init -y
+
+mkdir "projects"
+
+cd "projects"
+
+npm create vite@latest
+
+==>> "name_app"
+
+-> React
+-> Javascript + SWC
+
+cd "name_app"
+
+npm install
+
+npm run dev

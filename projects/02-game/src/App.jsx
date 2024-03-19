@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { confetti } from 'canvas-confetti'
+import confetti from 'canvas-confetti'
 import { Square } from './components/square.jsx'
 import { TURNS } from './constants.js'
 import { checkWinnerFrom, checkEndGame } from './components/board.js'

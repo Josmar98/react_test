@@ -3,17 +3,13 @@ import './App.css'
 import { confetti } from 'canvas-confetti'
 import { Square } from './components/square.jsx'
 import { TURNS } from './constants.js'
-import { checkWinnerFrom } from './components/board'
+import { checkWinnerFrom, checkEndGame } from './components/board.js'
 
 function App() {
   const [board, setBoard] = useState(Array(9).fill(null))
   const [turn, setTurn] = useState(TURNS.X)
 
   const [winner, setWinner] = useState(null)
-
-  const checkEndGame = (boardToCheck) => {
-    return boardToCheck.every((square) => square != null)
-  }
   
   const updateBoard = (index) => {
     // if(board[index]!=null) return
